@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spotify</title>
+<link rel='icon' type="image/x-icon" href="https://shorturl.at/t908x">
+<meta charset='UTF-8'>
+<meta name='description' content='Music Streaming Platform'>
+<meta name='keywords' content='Music, Singer Artist'>
+<meta name ='author' content='Yash Pratap Gautam'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel='stylesheet' href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload="showPage('home')" style='background-color:black;color:#e3e3e3;'>
+<nav>
+<img class='logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/440px-Spotify_logo_with_text.svg.png'>
+<div class='card'>
+<a href='#' id='navopt1' onclick="showPage('home')">
+<span class='fa-solid fa-house' style='margin-right:20%;'></span>
+<h3 style='display:inline-block;'>
+  Home
+</h3>
+</a>
+<br>
+<a id='navopt2' href='#' onclick="showPage('search')">
+<span class='fa-solid fa-magnifying-glass' style='margin-right:15%;'></span>
+<h3 style='display:inline-block;'>
+  Search
+</h3>
+</a>
+</div>
+<div class='card'>
+<a href='#'>
+<h3 style='display:inline;'>
+  <span class='fa-solid fa-lines-leaning fa-rotate-180' style='margin-right:4.9%'></span>
+  Library
+</h3>
+</a>
+<a style='margin-left:30%'>
+  +
+</a>
+<div style='background-color:grey;border-radius:5px;padding:10px;margin-top:10px;'>
+<p style='font-weight:bold;font-size:14px;color:white;'>
+  Create your own playlist
+</p>
+<p style='font-size:14px;color:white;'>
+  It's easy, we'll help you
+</p>
+<button class='button'>
+  Create playlist
+</button>
+</div>
+</nav>
+<main>
+<div class='top'>
+<div class='topleft'>
+<a href='#'>
+<button class='history'>    
+  <
+</button></a>
+<a href='#'>
+<button class='history'>
+  >
+</button></a>
+</div>
+<div class='topright'>
+<a class='prem' href='#'>
+  Premium
+</a>
+<a class='prem' href='#'>
+  Support
+</a>
+<a class='prem' href='#'>
+  Download
+</a>
+<strong style='color:white;font-size:24px;margin-right:10px'>
+  |
+</strong>
+<a class='signup'>
+  Sign up
+</a>
+<a><button class='button'>
+  Log in
+</button></a>
+</div>
+</div>
+<h1 id='wish'></h1>
+<div id="home" class='ui'>
+<div>
+<h3>
+  Top Songs
+</h3>
+<p>
+  Most played music across the globe.
+</p>
+<div class='playlists'>
+<div class='play'>
+<a>
+  <img class='song' src='https://upload.wikimedia.org/wikipedia/en/8/8e/The_cover_for_the_second_studio_album_by_American_singer-songwriter_Lizzy_McAlpine.jpeg'>
+<a href="/songs/Lizzy McAlpine - ceilings.mp3" onclick="play1()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    ceilings
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    Lizzy McAlpine
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZcVqz02SQxGLvrqWewAQOszxwjZCpYUmVw&usqp=CAU'>
+<a href="/songs/Phoebe Bridgers - Motion Sickness.mp3" onclick="play2()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Motion Sickness
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    Phoebe Bridgers
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7z-BOIevnP_5N9LHBsaZVASPf5MQ3aDh3Q&usqp=CAU'>
+<a href="/songs/FINNEAS - Let’s Fall in Love for the Night.mp3" onclick="play3()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+    <p style="font-size:14px;"><p style="font-weight:bold;color:white;font-size:12px;">Let's Fall in Love for the Night</p></p>
+  <p style='font-size:14px;color:gray;'>
+    FINNEAS
+  </p>
+  </a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_qf_EiEDDiE3FTptX8Do0k468mu80d9dmQ&usqp=CAU'>
+<a href='/songs/dhruv - double take.mp3' onclick="play4()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    double take
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    dhruv
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjrtnoMgAB2-lfjtty7TwBLbPW9uTmXAr6A&usqp=CAU'>
+<a href='/songs/FINNEAS - Naked.mp3' onclick="play5()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Naked
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    FINNEAS
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZm3cBeEdbEmP2NbNR3GBlUiMllAo4QpXDHg&usqp=CAU'>
+<a href='/songs/Taylor Swift - Midnight Rain.mp3' onclick="play6()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Midnight Rain
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    Taylor Swift
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://m.media-amazon.com/images/I/71eZBMExRVL._UF1000,1000_QL80_.jpg'>
+<a href='/songs/Taylor Swift - Call It What You Want.mp3' onclick="play7()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Call It What You Want
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    Taylor Swift
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCenZvmUI_7yRYXXJFkYSYv8O76LyPpDIQ_w&usqp=CAU'>
+<a href="/songs/Taylor Swift - All Too Well (10 Minute Version) (Taylor's Version) (From The Vault).mp3" onclick="play8()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:14px'><p style='font-weight:bold;font-size:11px;color:white;'>
+    All Too Well (10 Minute Version)
+  </p></p>
+  <p style='font-size:14px;color:gray;'>
+    Taylor Swift
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZm3cBeEdbEmP2NbNR3GBlUiMllAo4QpXDHg&usqp=CAU'>
+<a href='/songs/Taylor Swift - Karma.mp3' onclick="play9()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Karma
+  </p>
+  <p style='font-size:14px;color:gray;'>
+    Taylor Swift
+  </p>
+</a>
+</div>
+</div>
+<div>
+<h3>
+  Uniquely Yours
+</h3>
+<p>
+  Artists you love.
+</p>
+<div class='playlists' style='margin-bottom:20%;'>
+<div class='play'>
+<a>
+  <img class='song' src='https://i.scdn.co/image/ab6761610000e5eb6a224073987b930f99adc706'>
+<a class="link10" onclick="Taylor()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Taylor Swift
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVomwLPYACVtp8xUgzNoxZLFq6tw2FZ_ETjw&usqp=CAU'>
+<a class="playmusic" onclick="FINNEAS()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    FINNEAS
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://i.scdn.co/image/ab6761610000e5eb9d9fb46b69bfb485f8872d02'>
+<a class="playmusic" onclick="dhruv()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    dhruv
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlKiLMWH8HtYAxx3OClS9c3hBmhaWNHRBiQ&usqp=CAU'>
+<a class="playmusic" onclick="Lizzy()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Lizzy McAlpine
+  </p>
+</a>
+</div>
+<div class='play'>
+<a>
+  <img class='song' src='https://i.scdn.co/image/ab6761610000e5eb626686e362d30246e816cc5b'>
+<a class="playmusic" onclick="Phoebe()">
+<div class="music">
+  <span class="fa fa-play"></span>
+</div>
+</a>
+  <p style='font-weight:bold;font-size:14px;color:white;'>
+    Phoebe Bridgers
+  </p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="search" class='ui'>
+  <h1>Search Music, Artists & Podcasts</h1>
+  <input type="search" placeholder="Search for your favorite Music, Artist or Podcast">
+</div>
+</main>
+<div id="player">
+  <div class="details">
+    <div class="trackimg"><img class="track-art"></div>
+    <div id="name">
+    <div class="track-name"></div>
+    <a><div class="track-artist"></div></a>
+    </div>
+  </div>
+  <div class="player-controls">
+    <div class="controls">
+    <div class="shuffle-track" onclick="shuffleTrack()">
+        <i class="fa fa-random"></i>
+    </div>
+    <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa-regular fa-circle-play fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward"></i>
+      </div>
+      <div class="rep-track" onclick="repTrack()">
+        <i class="fa fa-repeat"></i>
+      </div>
+      <div class="queue" onclick="Queue()">
+        <i class="fa-solid fa-list-ul"></i>
+      </div>
+      <div class="devices">
+        <i class="fa-solid fa-computer"></i>
+      </div>
+      <!-- Define the section for displaying the volume slclasser-->
+    <div class="slclasser_container">
+      <span class="fa-solid fa-volume-high"></span>
+      <input type="range" min="0" max="100"
+        value="100" class="volume_slider" onchange="setVolume()">
+    </div>
+      </div>
+      <div class="timer">
+      <div class="current-time"></div>
+      <input type="range" min="0" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $("a").on( "click", function(event){
+  event.preventDefault();
+  });
+</script>
+<script src="main.js"></script>
+</body>
+</html>
