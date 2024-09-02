@@ -16,5 +16,9 @@ Live Demo - https://yash-g01.github.io/musicplayerclone/
 ## Screenshots
 
 <p>
-    <img src="./Screenshots/SS1.jpg" alt="Web_img">
+    <img src="./Screenshots/SS1.png" alt="Web_img">
+</p>
+
+<p>
+    <img src="./Screenshots/SS2.png" alt="Web_img">
 </p>
