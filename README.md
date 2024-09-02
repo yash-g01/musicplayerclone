@@ -2,6 +2,8 @@
 
 Live Demo - https://yash-g01.github.io/musicplayerclone/
 
+* This website is not responsive and should be best viewed on a computer screen.
+
 ## Functions
 
 #### Modes :
