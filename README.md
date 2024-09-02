@@ -6,7 +6,7 @@ Live Demo - https://yash-g01.github.io/musicplayerclone/
 
 #### Modes :
 * Repeat mode - Repeats the song endlessly untill you turn it off.
-* Shuffle - Shuffles the playlists. If off, will play the music in order of the songs listed on the page (left to right).
+* Shuffle - Shuffles the playlists. If turned off, it will play the music in order of the songs listed on the page (left to right).
 
 #### Other Functions :
 * progressive drag progress bar on song timeline.
